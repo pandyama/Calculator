@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:fontFamily="serif-monospace"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/mathExpression"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="end"
+        android:background="#000000"
+        android:fontFamily="casual"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/resultExpression"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="end"
+        android:background="#000000"
+        android:fontFamily="casual"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#00B12E2E"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="Clear"
+            android:text="CLEAR"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+
+            android:layout_marginBottom="-5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_weight="1"
+
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+
+            android:onClick="NumberClicked"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="8"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="9"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/divide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="OperationClicked"
+            android:text="/"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="4"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="5"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="6"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/multiply"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="OperationClicked"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:fontFamily="casual"
+            android:onClick="NumberClicked"
+            android:text="3"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/subtract"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="OperationClicked"
+            android:text="-"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="dotClicked"
+            android:text="."
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="NumberClicked"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textSize="30sp"></Button>
+
+        <Button
+        android:id="@+id/equals"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-4dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:fontFamily="casual"
+        android:onClick="Equals"
+        android:text="="
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            style="?android:attr/buttonBarButtonStyle"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="OperationClicked"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
