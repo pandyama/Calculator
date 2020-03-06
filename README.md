@@ -1,7 +1,8 @@
 # Calculator
 Simple Android Calculator app built using Kotlin
 
-**COMING TO GOOGLE PLAY STORE SOON**
+Play Store link below:
+https://play.google.com/store/apps/details?id=com.mp.calculator
 
 
 Screenshots below: 
